@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+    <script>
+      let pregunta = confirm("¿Quieres abrir una ventana nueva?");
+      if (pregunta) {
+        const caracteristicas =
+          "width=200,height=80,top=200,left=500,resizable=yes,scrollbars=yes,toolbar=no,location=no,menubar=no";
+
+        nueva_ventana = window.open("", "prueba", caracteristicas);
+
+        if (nueva_ventana) {
+          nueva_ventana.document.write("<h1>Entorno cliente</h1>");
+        } else {
+          alert("La ventana ha sido bloqueada por el navegador.");
+        }
+      }
+    </script>
+  </body>
+</html>

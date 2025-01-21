@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <script>
+      fechaActual = new Date();
+      alert(fechaActual);
+
+      fechaCumpleaños = new Date(2004, 11, 2);
+      alert(fechaCumpleaños);
+
+      document.write(fechaActual);
+      document.write("</br>");
+      document.write(fechaCumpleaños);
+      document.write("</br>");
+
+      añoActual = fechaActual.getFullYear();
+      document.write(añoActual);
+      document.write("</br>");
+
+      añoCumpleaños = fechaCumpleaños.getFullYear();
+      document.write(añoCumpleaños);
+      document.write("</br>");
+
+      fechaActual.setFullYear(2024 - 1);
+      document.write(fechaActual.toLocaleDateString());
+    </script>
+  </body>
+</html>
