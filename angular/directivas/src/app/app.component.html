@@ -1,0 +1,15 @@
+<h1>{{ titulo }}</h1>
+Nombre: <input type="text" [(ngModel)]="nombre" />
+<br />
+Apellidos: <input type="text" [(ngModel)]="apellidos" />
+<br />
+<button (click)="mostrar()">Añadir</button>
+<p style="background-color: purple" *ngIf="alta; else sinAlta">{{ texto }}</p>
+
+<ng-template #sinAlta>
+  <p>Ninguna Alta</p>
+</ng-template>
+
+<div *ngFor="let personas of Persona">
+  {{ personas.nombre }} {{ personas.apellidos }}
+</div>
