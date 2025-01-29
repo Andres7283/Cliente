@@ -1,0 +1,16 @@
+<form>
+  <label for="nombre">Nombre </label>
+  <input type="text" [(ngModel)]="nombre" name="nombre" id="nombre" /><br />
+  <label for="precio"> Precio </label>
+  <input type="text" [(ngModel)]="precio" name="precio" id="precio" /><br />
+  <label for="unidades"> Unidades </label>
+  <input
+    type="text"
+    [(ngModel)]="unidades"
+    name="unidades"
+    id="unidades"
+  /><br />
+  <button (click)="aniadir()">Comprar</button>
+</form>
+
+<app-listado-articulos [articulos]="articulos"></app-listado-articulos>

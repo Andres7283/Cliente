@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { ArticuloComponent } from './articulo/articulo.component';
 
 export interface Persona {
   nombre: string;
@@ -12,12 +13,12 @@ export interface Persona {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule],
+  imports: [RouterOutlet, FormsModule, CommonModule, ArticuloComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  titulo: string = 'Alta de usuario';
+  title: string = 'Alta de usuario';
 
   nombre: string = '';
   apellidos: string = '';

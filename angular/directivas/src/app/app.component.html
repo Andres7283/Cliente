@@ -1,4 +1,4 @@
-<h1>{{ titulo }}</h1>
+<!--<h1>{{ title }}</h1>
 Nombre: <input type="text" [(ngModel)]="nombre" />
 <br />
 Apellidos: <input type="text" [(ngModel)]="apellidos" />
@@ -10,6 +10,12 @@ Apellidos: <input type="text" [(ngModel)]="apellidos" />
   <p>Ninguna Alta</p>
 </ng-template>
 
-<div *ngFor="let personas of Persona">
-  {{ personas.nombre }} {{ personas.apellidos }}
+<div *ngFor="let persona of personas">
+  Nombre: {{ persona.nombre }}
+  <br />
+  Apellidos: {{ persona.apellidos }}
+  <br />
 </div>
+<br /><br />
+-->
+<app-articulo></app-articulo>
