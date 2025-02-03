@@ -1,0 +1,6 @@
+<p>Clase planet-List</p>
+<ul>
+  <li *ngFor="let planeta of (planetasList$ | async)?.results">
+    {{ planeta.name }}
+  </li>
+</ul>
