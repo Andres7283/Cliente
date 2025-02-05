@@ -18,5 +18,6 @@ export class PlanetDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.planetasDetails$ = this.servicioPlanetas.getPlaneta();
+    console.log(this.planetasDetails$);
   }
 }
