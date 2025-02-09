@@ -18,6 +18,6 @@ export class AppComponent implements OnInit {
   constructor(private servicioPokemon: PokemonServicesService) {}
   ngOnInit(): void {
     this.pokemonList$ = this.servicioPokemon.getPokemonList();
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
 }

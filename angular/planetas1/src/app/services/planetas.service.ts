@@ -14,6 +14,6 @@ export class PlanetasService {
     return this.http.get<PlanetList>(`${this.url}?page=${page}`);
   }
   getPlaneta(num: number = 1): Observable<Planeta> {
-    return this.http.get<Planeta>(`${this.url}/?num=${num}`);
+    return this.http.get<Planeta>(`${this.url}/${num}`);
   }
 }
