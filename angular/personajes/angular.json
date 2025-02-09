@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "planetas1": {
+    "personajes": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/planetas1",
+            "outputPath": "dist/personajes",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "planetas1:build:production"
+              "buildTarget": "personajes:build:production"
             },
             "development": {
-              "buildTarget": "planetas1:build:development"
+              "buildTarget": "personajes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,8 +92,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "767f4a69-1204-4028-9d74-1e5e846a7b94"
   }
 }
