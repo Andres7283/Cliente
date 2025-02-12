@@ -1,0 +1,8 @@
+<h2>Libros de la Biblioteca</h2>
+<ul *ngFor="let l of libros">
+  <li>
+    <a [routerLink]="['/libroDetalle', l.id]">{{ l.id }}-{{ l.titulo }} </a
+    ><span><a [routerLink]="['/modifico', l.id]">✏️</a></span>
+  </li>
+</ul>
+<button (click)="add()">Añadir libro</button>
