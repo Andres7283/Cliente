@@ -1,0 +1,54 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "titulo": "El Padrino",
+      "actores": [
+        { "nombre": "Marlon Brando", "genero": "hombre", "edad": 80 },
+        { "nombre": "Al Pacino", "genero": "hombre", "edad": 83 },
+        { "nombre": "Diane Keaton", "genero": "mujer", "edad": 78 },
+        { "nombre": "James Caan", "genero": "hombre", "edad": 82 }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Titanic",
+      "actores": [
+        { "nombre": "Leonardo DiCaprio", "genero": "hombre", "edad": 49 },
+        { "nombre": "Kate Winslet", "genero": "mujer", "edad": 48 },
+        { "nombre": "Billy Zane", "genero": "hombre", "edad": 58 },
+        { "nombre": "Kathy Bates", "genero": "mujer", "edad": 75 }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "El Caballero de la Noche",
+      "actores": [
+        { "nombre": "Christian Bale", "genero": "hombre", "edad": 50 },
+        { "nombre": "Heath Ledger", "genero": "hombre", "edad": 28 },
+        { "nombre": "Aaron Eckhart", "genero": "hombre", "edad": 56 },
+        { "nombre": "Maggie Gyllenhaal", "genero": "mujer", "edad": 46 }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Matrix",
+      "actores": [
+        { "nombre": "Keanu Reeves", "genero": "hombre", "edad": 59 },
+        { "nombre": "Carrie-Anne Moss", "genero": "mujer", "edad": 56 },
+        { "nombre": "Laurence Fishburne", "genero": "hombre", "edad": 62 },
+        { "nombre": "Hugo Weaving", "genero": "hombre", "edad": 64 }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Avatar",
+      "actores": [
+        { "nombre": "Sam Worthington", "genero": "hombre", "edad": 47 },
+        { "nombre": "Zoe Saldana", "genero": "mujer", "edad": 45 },
+        { "nombre": "Sigourney Weaver", "genero": "mujer", "edad": 74 },
+        { "nombre": "Stephen Lang", "genero": "hombre", "edad": 72 }
+      ]
+    }
+  ]
+}

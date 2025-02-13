@@ -1,0 +1,15 @@
+<p>Componente lista-peliculas</p>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Titulo</th>
+    <th>Boton</th>
+  </tr>
+  <tr *ngFor="let pelicula of listaPeliculas$ | async">
+    <td>{{ pelicula.id }}</td>
+    <td>
+      <a>{{ pelicula.titulo }} </a>
+    </td>
+    <td *ngFor="let actor of pelicula.actores"></td>
+  </tr>
+</table>

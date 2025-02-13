@@ -18,19 +18,14 @@ export class LibroModificadoComponent implements OnInit {
     private router: Router
   ) {}
 
-  titulo: string = '';
-  autor: string = '';
-  id: number = 0;
-
   libro: Libro = { id: 0, titulo: '', autor: '' };
 
   ngOnInit(): void {
-    this.id = this.act.snapshot.params['id'];
-    this.libro = this.librosService.getLibros()[this.id - 1];
+    this.libro.id = this.act.snapshot.params['id'];
+    console.log(this.libro.id);
+    this.libro = this.librosService.getLibros()[this.libro.id - 1];
   }
   modificar() {
-    this.libro.titulo = this.titulo;
-    this.libro.autor = this.autor;
     this.librosService.modificar(this.libro);
     this.router.navigate(['/libros']);
   }

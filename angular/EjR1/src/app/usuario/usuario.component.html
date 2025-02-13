@@ -1,2 +1,7 @@
 <p>Componente usuario</p>
-<input type="text" />
+<input type="text" name="num" [(ngModel)]="num" />
+<button (click)="getUsuarios()">Acceder</button>
+<p>Name: {{ (usuarioList$ | async)?.name }}</p>
+<p>Username: {{ (usuarioList$ | async)?.username }}</p>
+<p>Email: {{ (usuarioList$ | async)?.email }}</p>
+<p>Street: {{ (usuarioList$ | async)?.address?.street }}</p>

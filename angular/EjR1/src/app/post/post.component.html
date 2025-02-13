@@ -1,0 +1,16 @@
+<h1>POSTS</h1>
+<button (click)="getUsuario()">Post Usuarios</button>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Street</th>
+  </tr>
+  <tr *ngFor="let usuario of listaUsuarios$ | async">
+    <td>{{ usuario.name }}</td>
+    <td>{{ usuario.username }}</td>
+    <td>{{ usuario.email }}</td>
+    <td>{{ usuario.address.street }}</td>
+  </tr>
+</table>

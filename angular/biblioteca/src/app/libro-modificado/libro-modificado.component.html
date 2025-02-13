@@ -3,8 +3,8 @@
   <p>Id: {{ libro.id }}</p>
   <p>Titulo: {{ libro.titulo }}</p>
   <p>Autor: {{ libro.autor }}</p>
-  <input type="text" name="titulo" [(ngModel)]="titulo" />
-  <input type="text" name="autor" [(ngModel)]="autor" />
+  <input type="text" name="titulo" [(ngModel)]="libro.titulo" />
+  <input type="text" name="autor" [(ngModel)]="libro.autor" />
 </form>
 <button (click)="modificar()">Modificar</button>
 <button (click)="volverLibros()">Volver a Libros</button>
