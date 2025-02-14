@@ -10,6 +10,6 @@
     <td>
       <a>{{ pelicula.titulo }} </a>
     </td>
-    <td *ngFor="let actor of pelicula.actores"></td>
+    <td *ngFor="let actor of pelicula.actores">{{ actor.nombre }}</td>
   </tr>
 </table>
