@@ -1,0 +1,11 @@
+<p>Componente aleatorio</p>
+
+<p>
+  Name: {{ (datosAleatorio$ | async)?.results?.[0]?.name?.title }}
+  {{ (datosAleatorio$ | async)?.results?.[0]?.name?.first }}
+</p>
+<p>Second name: {{ (datosAleatorio$ | async)?.results?.[0]?.name?.last }}</p>
+<p>City: {{ (datosAleatorio$ | async)?.results?.[0]?.location?.city }}</p>
+<p>Email: {{(datosAleatorio$ | async)?.results?.[0]?.email}}</p>
+<p>Email: {{(datosAleatorio$ | async)?.results?.[0]?.picture?.medium}}</p>
+<img src="(datosAleatorio$ | async)?.results?.[0]?.picture?.medium" />
