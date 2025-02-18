@@ -19,5 +19,10 @@ export class ListaPeliculasComponent implements OnInit {
 
   ngOnInit(): void {
     this.listaPeliculas$ = this.peliculasService.getListaPeliculas();
+
+
+
+
+    
   }
 }

@@ -12,5 +12,10 @@ export class ListaPeliculasService {
 
   getListaPeliculas() {
     return this.http.get<Pelicula[]>(`${this.url}`);
+
+
+
+
+
   }
 }
